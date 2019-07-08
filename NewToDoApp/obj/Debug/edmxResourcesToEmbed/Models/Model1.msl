@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ListDetailDBModelStoreContainer" CdmEntityContainer="ListDetailDBEntities">
+    <EntitySetMapping Name="C__EFMigrationsHistory">
+      <EntityTypeMapping TypeName="ListDetailDBModel.C__EFMigrationsHistory">
+        <MappingFragment StoreEntitySet="__EFMigrationsHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListDetails">
+      <EntityTypeMapping TypeName="ListDetailDBModel.ListDetail">
+        <MappingFragment StoreEntitySet="ListDetails">
+          <ScalarProperty Name="LID" ColumnName="LID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="delmode" ColumnName="delmode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

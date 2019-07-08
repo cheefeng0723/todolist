@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ListDetailDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__EFMigrationsHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ListDetails">
+    <Key>
+      <PropertyRef Name="LID" />
+    </Key>
+    <Property Name="LID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="date" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="255" />
+    <Property Name="delmode" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="ListDetailDBModelStoreContainer">
+    <EntitySet Name="__EFMigrationsHistory" EntityType="Self.__EFMigrationsHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ListDetails" EntityType="Self.ListDetails" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

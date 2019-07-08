@@ -1,0 +1,65 @@
+﻿body {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+    .table th {
+        background-color: #F7F7F7;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .table th, .table td {
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+
+.input {
+    padding: 20px;
+}
+
+    .input label {
+        font-size: 20px;
+    }
+
+    .input input {
+        font-size: 20px;
+    }
+
+.container .nohover {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.container #nohover {
+    text-decoration: none;
+    font-weight:bold;
+    color: white;
+    font-size: 12px;
+}
+
+.container table {
+    font-size: 20px;
+}
+.scrollable{
+    height:300px;
+    overflow:scroll;
+    
+}
+.waiting{
+    font-size:20px;
+    font-weight:bold;
+    color:red;
+}
+
+.done{
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
